@@ -171,7 +171,7 @@ export default function Staking() {
         <div className="basis-0 shrink-0 grow flex flex-col gap-4 md:gap-5">
           <div className="flex flex-wrap gap-4 md:gap-5">
             {data.map((data) => (
-              <Card body={data.body} title={data.title} />
+              <Card key={data.title} body={data.body} title={data.title} />
             ))}
           </div>
 
@@ -192,7 +192,7 @@ export default function Staking() {
               }}
             >
               {summary.map((summary) => (
-                <div className="flex flex-col gap-2.5">
+                <div key={summary.title} className="flex flex-col gap-2.5">
                   <p className="text-[#ABABAB] text-xs">{summary.title}</p>
                   <p className="text-white text-lg leading-[24.51px] font-semibold break-words">
                     {summary.body}

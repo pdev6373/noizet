@@ -28,7 +28,12 @@ export default function Home() {
       <main>
         <div className="flex gap-5">
           {data.map((data) => (
-            <Card body={data.body} icon={data.icon} title={data.title} />
+            <Card
+              key={data.title}
+              body={data.body}
+              icon={data.icon}
+              title={data.title}
+            />
           ))}
         </div>
       </main>

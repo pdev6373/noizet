@@ -42,8 +42,6 @@ const navs = [
 export default function Sidenav() {
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
     <div className="flex flex-col gap-[9vh] shrink-0 grow px-5 xl:px-7 pb-[50px] bg-[#3A2619] fixed lg:sticky right-[200vw] lg:right-auto top-0 lg:inset-0 h-screen overflow-x-hidden overflow-y-auto border-r border-solid border-[#422C1E]">
       <div className="flex justify-between gap-5 sticky top-0 bg-[#3A2619] z-10 pt-8 pb-3">
@@ -67,6 +65,7 @@ export default function Sidenav() {
         <ul className="flex flex-col gap-5">
           {navs.map((nav) => (
             <li
+              key={nav.name}
               className={`rounded-lg overflow-hidden ${
                 pathname === nav.route ? "bg-[#CD81431A]" : ""
               } hover:bg-[#CD81431A]`}

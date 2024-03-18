@@ -184,9 +184,9 @@ export default function NftStaking() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4  grow w-full md:w-auto">
+      <div className="flex justify-start flex-col gap-4  grow w-full md:w-auto">
         <div
-          className="flex flex-col grow gap-5 bg-[#3A2619] py-[25px] px-[15px] md:p-[25px] rounded-[12px]"
+          className="flex flex-col gap-5 bg-[#3A2619] py-[25px] px-[15px] md:p-[25px] rounded-[12px]"
           style={{
             boxShadow: "0px 4px 14px 0px #38220C80",
           }}

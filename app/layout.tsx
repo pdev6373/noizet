@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={openSans.className}>
         <div className="flex">
           <Sidenav />
-          <div className="flex-grow-[100] bg-[#231507] min-h-screen">
+          <div className="flex-grow-[100] bg-[#231507] min-h-screen overflow-x-hidden">
             <Header />
             <div className="py-[35px] px-[25px] md:p-8 xl:p-10 grow">
               {children}

@@ -114,7 +114,10 @@ export default function NftStaking() {
           }}
         >
           {nfts.map((nft) => (
-            <div className="bg-[#493121] rounded-[10px] p-[15px] flex flex-col gap-3 min-w-[250px] basis-0 grow">
+            <div
+              key={nft.title}
+              className="bg-[#493121] rounded-[10px] p-[15px] flex flex-col gap-3 min-w-[250px] basis-0 grow"
+            >
               <div className="relative w-full aspect-square">
                 <Image
                   src={nft.image}
@@ -130,7 +133,10 @@ export default function NftStaking() {
 
               <div className="flex flex-col gap-[11px]">
                 {nft.details.map((detail) => (
-                  <div className="flex justify-between items-center gap-5">
+                  <div
+                    key={detail.title}
+                    className="flex justify-between items-center gap-5"
+                  >
                     <p className="text-[#ABABAB] text-xs leading-[16.34px]">
                       {detail.title}
                     </p>
@@ -191,7 +197,7 @@ export default function NftStaking() {
 
           <div className="flex flex-col gap-5">
             {info.map((info) => (
-              <div className="flex gap-[15px]">
+              <div key={info.title} className="flex gap-[15px]">
                 <div className="w-[40px] h-[40px] flex justify-center items-center bg-[#674226] rounded-[4px]">
                   {info.icon}
                 </div>

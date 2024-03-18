@@ -26,7 +26,7 @@ export default function Home() {
       <PageHeader icon="/assets/page-icon.svg">Dashboard Overview</PageHeader>
 
       <main>
-        <div className="flex gap-5">
+        <div className="flex flex-wrap gap-5">
           {data.map((data) => (
             <Card
               key={data.title}

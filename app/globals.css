@@ -10,6 +10,7 @@
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 0;
   background-color: #422c1e;
 }
 
@@ -27,6 +28,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #75523d;
 }
+
+/*  */
 
 body::-webkit-scrollbar {
   background-color: #231507;

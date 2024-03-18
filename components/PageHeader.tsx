@@ -12,7 +12,7 @@ export default function PageHeader({
   type = "large",
 }: PageHeaderType) {
   return (
-    <div className="flex items-center gap-5 mg:gap-6 xl:gap-[30px]">
+    <div className="flex flex-wrap items-center gap-5 lg:gap-6 xl:gap-[30px]">
       <Image
         src={icon}
         alt="page icon"
@@ -20,9 +20,9 @@ export default function PageHeader({
         height={type === "large" ? 59 : 45}
       />
       <h2
-        className={`text-[#FFFFFF] ${
+        className={`text-[#fff] ${
           type === "large"
-            ? "text-4xl leading-[50.4px]"
+            ? "text-[20px] leading-[28px] lg:text-[28px] lg:leading-[32px] xl:text-4xl xl:leading-[50.4px]"
             : "text-[20px] leading-[28px] lg:text-[28px] lg:leading-[32px] xl:text-[32px] xl:leading-[44.8px]"
         } font-semibold`}
       >

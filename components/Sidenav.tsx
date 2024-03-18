@@ -44,7 +44,7 @@ export default function Sidenav() {
 
   return (
     <div className="flex flex-col gap-[9vh] shrink-0 grow px-5 xl:px-7 pb-[50px] bg-[#3A2619] fixed lg:sticky right-[200vw] lg:right-auto top-0 lg:inset-0 h-screen overflow-x-hidden overflow-y-auto border-r border-solid border-[#422C1E]">
-      <div className="flex justify-between gap-5 sticky top-0 bg-[#3A2619] z-10 pt-8 pb-3">
+      <div className="flex justify-between gap-5 sticky top-0 bg-[#3A2619] z-10 pt-10 pb-3">
         <Link
           href="/"
           className="block relative w-[150px] xl:w-[170px] h-[25.588px] xl:h-[29px]"

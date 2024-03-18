@@ -5,3 +5,5 @@ export { default as Staking } from "./Staking";
 export { default as Vesting } from "./Vesting";
 export { default as APR } from "./APR";
 export { default as Earning } from "./Earning";
+export { default as Stack } from "./Stack";
+export { default as Check } from "./Check";
